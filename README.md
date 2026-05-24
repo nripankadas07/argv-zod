@@ -14,7 +14,7 @@ per-field validation. **Zero runtime dependencies.**
 ## Installation
 
 ```bash
-npm install argv-zod
+npm install && npm run build
 ```
 
 ## Quick example
