@@ -14,7 +14,8 @@
     "build": "tsc",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "pretest": "node --test dependency-audit.test.cjs"
   },
   "keywords": [
     "argv",
@@ -45,5 +46,10 @@
     "jest": "^30.5.2",
     "ts-jest": "^29.4.14",
     "typescript": "^5.4.5"
+  },
+  "overrides": {
+    "js-yaml": {
+      "argparse": "2.0.1"
+    }
   }
 }
